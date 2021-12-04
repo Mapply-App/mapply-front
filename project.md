@@ -10,7 +10,7 @@ Chaque personne se créée un profil lors de l'installation de l'application et 
 
 Prenons l'exemple de Bob, 16 ans, qui rencontre la jolie Luna du même âge. Bob est très timide, et n'a pas le courage d'aller lui demander son Snap. Il ouvre donc l'application Mapply, et... super ! Luna possède l'application elle aussi ! Comment le sait-il ? Tout simplement parce qu'il la voit sur la carte, près de lui. Il clique donc sur son profil, voit qu'elle est en public, et qu'elle possède l'application Snapchat. Mais c'est inutile ! Car il peut tout simplement s'abonner à elle sur Mapply et lui envoyer un message. Par contre, il ne va pas manquer de la demander en ami sur Clash Royale !
 
-Pour résumer, Mapply est un réseau social spécialement conçu pour simplifier les échanges de demandes d'ami sur les jeux vidéos et les autres applications.
+Pour résumer, Mapply est un réseau social spécialement conçu pour simplifier les échanges de demandes d'ami sur les jeux vidéos et d'autres applications.
 
 ## Confidentialité
 
