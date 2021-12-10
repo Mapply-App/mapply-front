@@ -40,7 +40,7 @@ export default function Map() {
       style={styles.map}
       provider={PROVIDER_GOOGLE}
       showsUserLocation
-      followsUserLocation="true"
+      followsUserLocation='true'
       initialRegion={{
         latitude: location.coords.latitude,
         longitude: location.coords.longitude,

@@ -4,8 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Map from './src/Map';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Sound from './src/Ahahah';
-
+import messagerie from './src/Ahahah';
 
 function SearchScreen() {
   return (
@@ -19,6 +18,11 @@ function SearchScreen() {
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
+
+  // useEffect(() => {
+  //   document.title = `Vous avez cliqué ${count} fois`;
+  // });
+
   return (
     <Tab.Navigator screenOptions={{ headerShown: false }} tabBarOptions={{ showLabel: false }}>
     
@@ -36,7 +40,7 @@ function MyTabs() {
       
       <Tab.Screen
         name="Search"
-        component={Sound}
+        component={messagerie}
         options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({ color }) => (

@@ -1,40 +1,67 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
-import { Audio } from 'expo-av';
+import { Text, View, StyleSheet, Button, TextInput, ScrollView} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function Sound() {
-  const [sound, setSound] = React.useState();
+export default function Messagerie () {
 
-  async function playSound() {
-    console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync(
-       require('../assets/son.mp3')
-    );
-    setSound(sound);
+  const [text, onChangeText] = React.useState("Useless Text");
+  const [number, onChangeNumber] = React.useState(null);
 
-    console.log('Playing Sound');
-    await sound.playAsync(); }
-
-  React.useEffect(() => {
-    return sound
-      ? () => {
-          console.log('Unloading Sound');
-          sound.unloadAsync(); }
-      : undefined;
-  }, [sound]);
 
   return (
-    <View style={styles.container}>
-      <Button title="AHAHAHAHAHAHH-" onPress={playSound} />
-    </View>
-  );
-}
+      <SafeAreaView  style={styles.container}>
+        <TextInput style={styles.input} placeholder="Tapez un message..."/>
+      </SafeAreaView>
+
+  )
+  }
+
+
+
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
+  container : {
+    flex : 1,
+    justifyContent: "flex-end",
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
     padding: 10,
+    borderRadius: 40,
+    backgroundColor: "white",
+    
   },
 });
+
+// export default function Messagerie() {
+//   const [text, onChangeText] = React.useState("Useless Text");
+//   const [number, onChangeNumber] = React.useState(null);
+
+//   return (
+//     <SafeAreaView>
+//       <TextInput
+//         style={styles.input}
+//         onChangeText={onChangeText}
+//         value={text}
+//       />
+//       <TextInput
+//         style={styles.input}
+//         onChangeText={onChangeNumber}
+//         value={number}
+//         placeholder="useless placeholder"
+//         keyboardType="numeric"
+//       />
+//     </SafeAreaView>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   input: {
+//     height: 40,
+//     margin: 12,
+//     borderWidth: 1,
+//     padding: 10,
+//   },
+// });
