@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Map from './src/Map';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import messagerie from './src/Ahahah';
+import Messagerie from './src/Messagerie';
 
 function SearchScreen() {
   return (
@@ -40,7 +40,7 @@ function MyTabs() {
       
       <Tab.Screen
         name="Search"
-        component={messagerie}
+        component={Messagerie}
         options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({ color }) => (
