@@ -11,7 +11,7 @@ import {
   PostTime,
   MessageText,
   TextSection,
-} from './messagerie/MessagesStyle';
+} from './MessagesStyle';
 
 const Messages = [
   {
