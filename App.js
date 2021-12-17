@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Map from './src/Map';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Messagerie from './src/Messagerie';
+import Messagerie from './src/messagerie/Messagerie';
 
 function SearchScreen() {
   return (
