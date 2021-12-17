@@ -17,7 +17,7 @@ const Messages = [
   {
     id: '1',
     userName: 'Thomas Bergotte',
-    userImg: require('./messagerie/assets/users/user-3.jpg'),
+    userImg: require('./assets/users/user-3.jpg'),
     messageTime: '2 heures',
     messageText:
       'Salut mon bg!',
@@ -25,7 +25,7 @@ const Messages = [
   {
     id: '2',
     userName: 'Thomas Bergotte',
-    userImg: require('./messagerie/assets/users/user-1.jpg'),
+    userImg: require('./assets/users/user-1.jpg'),
     messageTime: '2 heures',
     messageText:
       'Salut mon bg!',
@@ -33,7 +33,7 @@ const Messages = [
   {
     id: '3',
     userName: 'Thomas Bergotte',
-    userImg: require('./messagerie/assets/users/user-4.jpg'),
+    userImg: require('./assets/users/user-4.jpg'),
     messageTime: '2 heures',
     messageText:
       'Salut mon bg!',
@@ -41,7 +41,7 @@ const Messages = [
   {
     id: '4',
     userName: 'Thomas Bergotte',
-    userImg: require('./messagerie/assets/users/user-6.jpg'),
+    userImg: require('./assets/users/user-6.jpg'),
     messageTime: '2 heures',
     messageText:
       'Salut mon bg!',
@@ -49,7 +49,7 @@ const Messages = [
   {
     id: '5',
     userName: 'Thomas Bergotte',
-    userImg: require('./messagerie/assets/users/user-7.jpg'),
+    userImg: require('./assets/users/user-7.jpg'),
     messageTime: '2 heures',
     messageText:
       'Salut mon bg!',
