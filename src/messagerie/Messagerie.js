@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet, FlatList } from 'react-native';
+const { StatusBarManager } = NativeModules;
+import { View, Text, Button, StyleSheet, FlatList, Platform, NativeModules} from 'react-native';
 import {
   Container,
   Card,
@@ -12,6 +13,8 @@ import {
   MessageText,
   TextSection,
 } from './MessagesStyle';
+
+import Chat from './Chat'
 
 const Messages = [
   {
@@ -60,10 +63,11 @@ const Messagerie = ({navigation}) => {
     return (
       <Container>
         <FlatList 
+          style={styles.flatlist}
           data={Messages}
           keyExtractor={item=>item.id}
           renderItem={({item}) => (
-            <Card onPress={() => navigation.navigate('Chat', {userName: item.userName})}>
+            <Card onPress={() => navigation.navigate(Chat, {userName: item.userName})}>
               <UserInfo>
                 <UserImgWrapper>
                   <UserImg source={item.userImg} />
@@ -89,6 +93,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, 
     alignItems: 'center', 
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
+  flatlist: {
+    top: StatusBarManager.HEIGHT,
+  }
 });
